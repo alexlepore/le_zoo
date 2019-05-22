@@ -1,6 +1,6 @@
 /*zoo animals rest api*/
 let html_root = require("./views/root.js");
-let logs = require("./logs");
+let logs = require("./logs/server_logs.js");
 let morgan = require("morgan");
 let mongo = require("mongodb").MongoClient;
 let express = require("express");
