@@ -6,7 +6,7 @@ let mongo = require("mongodb").MongoClient;
 let express = require("express");
 let _PORT_ = process.env.PORT || 3011;
 
-//express definitions
+//express initialization
 let app = express();
 app.use(morgan('Morgan** - [:date[clf]] "HTTP/:http-version" :status ":user-agent"'));
 
@@ -54,8 +54,8 @@ mongo.connect(mongo_url, {useNewUrlParser: true}, (err, db) => {
     
 });  
 
+//root
 app.get("/", (req, res) => {
-    
     res.send(html_root);
     logs.server_info(req);
     

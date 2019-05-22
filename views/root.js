@@ -12,7 +12,6 @@ let a_open = "<a href";
 let a_close = "</a>\n";
 
 //dont do this
-
 html = 
 title + a_open + '="' + _all + '">' + all_p + a_close + 
 a_open + '="' + _name + '">' + name_p + a_close +
